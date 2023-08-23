@@ -1,0 +1,40 @@
+{
+  "name": "@yuci/utils",
+  "version": "0.1.0",
+  "author": "yuci <yucihent@163.com>",
+  "description": "development toolkit",
+  "keywords": [],
+  "packageManager": "pnpm@8.6.3",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "main": "index.js",
+  "scripts": {
+    "commit": "cz",
+    "prepare": "husky install"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@release-it/conventional-changelog": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.7.1",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.2",
+    "release-it": "^16.1.5",
+    "typescript": "^5.1.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  }
+}
