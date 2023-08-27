@@ -1,11 +1,11 @@
 /**
- * throttle
+ * 节流
  * @param fn the function to throttle
  * @param delay milliseconds
  * @returns new throttled function
  */
 
-export function throttle<T extends any[]>(
+export default function throttle<T extends any[]>(
   fn: (...args: T) => void,
   delay: number = 300
 ) {

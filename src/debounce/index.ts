@@ -1,11 +1,11 @@
 /**
- * debounce
+ * 防抖
  * @param fn the func to debounce
  * @param delay milliseconds
  * @returns new debounced function
  */
 
-export function debounce<T extends any[]>(
+export default function debounce<T extends any[]>(
   fn: (...args: T) => void,
   delay: number = 300
 ) {
