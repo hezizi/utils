@@ -11,6 +11,8 @@
   "main": "index.js",
   "scripts": {
     "commit": "cz",
+    "lint": "npx eslint --fix . && npx prettier --write .",
+    "release": "release-it",
     "prepare": "husky install"
   },
   "license": "MIT",
@@ -31,6 +33,12 @@
     "prettier": "^3.0.2",
     "release-it": "^16.1.5",
     "typescript": "^5.1.6"
+  },
+  "lint-staged": {
+    "src/*.ts": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   },
   "config": {
     "commitizen": {
