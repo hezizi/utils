@@ -1,6 +1,6 @@
 module.exports = {
   git: {
-    tag: false,
+    tag: true,
     requireBranch: 'main',
     commitMessage: 'release: @yuci/utils ${version}'
   },
