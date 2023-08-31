@@ -6,6 +6,10 @@ export function isEmptyObject(val: unknown): boolean {
   return isObject(val) && !Object.keys(val).length
 }
 
+export function isArray(obj: unknown): obj is unknown[] {
+  return Object.prototype.toString.call(obj) === '[object Array]'
+}
+
 export function isFunction(val: unknown): val is (...args: any[]) => boolean {
   return typeof val === 'function'
 }
