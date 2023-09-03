@@ -31,6 +31,8 @@
   "scripts": {
     "commit": "cz",
     "clear": "rimraf lib dist",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "typeCheck": "tsc",
     "build:esm": "esbuild src/index.ts --bundle --format=esm --outdir=lib",
     "build:cjs": "esbuild src/index.ts --bundle --format=cjs --outdir=dist",
@@ -58,7 +60,8 @@
     "prettier": "^3.0.2",
     "release-it": "^16.1.5",
     "rimraf": "^5.0.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vitest": "^0.34.3"
   },
   "lint-staged": {
     "src/*.ts": [
