@@ -13,7 +13,6 @@ describe('debounce', () => {
   test('the event should be debounced', async () => {
     for (let index = 0; index < 5; index++) {
       debouncedFn()
-      console.log('count', count)
     }
 
     const res = await new Promise((resolve) => {
