@@ -6,4 +6,10 @@ import '@arco-design/web-vue/dist/arco.css'
 
 import './style.css'
 
-createApp(App).use(ArcoVue).mount('#app')
+import components from './install'
+
+const app = createApp(App)
+
+await components(app)
+
+app.use(ArcoVue).mount('#app')

@@ -1,7 +1,7 @@
 import { defineComponent, ref } from 'vue'
-import { debounce } from '@yuci/utils'
+import { throttle } from '@yuci/utils'
 
-const name = 'Debounce'
+const name = 'Throttle'
 
 export default defineComponent({
   name,
@@ -9,12 +9,12 @@ export default defineComponent({
     const count = ref(0)
 
     // 默认延迟300ms
-    const onClick = debounce(() => {
+    const onClick = throttle(() => {
       count.value++
     })
 
     // 默认1000ms
-    const onClick2 = debounce(() => {
+    const onClick2 = throttle(() => {
       count.value++
     }, 1000)
 
