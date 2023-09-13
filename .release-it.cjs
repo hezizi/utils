@@ -5,7 +5,7 @@ module.exports = {
     commitMessage: 'release: @yuci/utils ${version}'
   },
   npm: {
-    publish: false
+    publish: true
   },
   plugins: {
     '@release-it/conventional-changelog': {
