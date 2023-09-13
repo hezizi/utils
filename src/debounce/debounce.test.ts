@@ -2,7 +2,7 @@ import { beforeEach, describe, test, expect } from 'vitest'
 import debounce from './index'
 
 describe('debounce', () => {
-  let debouncedFn
+  let debouncedFn: () => void
   let count = 1
   const fn = () => count++
 

@@ -10,6 +10,14 @@
   ],
   "license": "MIT",
   "packageManager": "pnpm@8.6.3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hezizi/utils.git"
+  },
+  "homepage": "https://github.com/hezizi/utils.git",
+  "bugs": {
+    "url": "https://github.com/hezizi/utils.git/issues"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
@@ -33,8 +41,8 @@
     "clear": "rimraf lib dist types",
     "test": "vitest",
     "typeCheck": "tsc",
-    "build:esm": "esbuild src/index.ts --bundle --format=esm --outdir=lib",
-    "build:cjs": "esbuild src/index.ts --bundle --format=cjs --outdir=dist",
+    "build:esm": "esbuild src/index.ts --bundle --minify --format=esm --outdir=lib",
+    "build:cjs": "esbuild src/index.ts --bundle --minify --format=cjs --outdir=dist",
     "build": "run-s clear typeCheck build:esm build:cjs",
     "lint": "npx eslint --fix . && npx prettier --write .",
     "release": "release-it",

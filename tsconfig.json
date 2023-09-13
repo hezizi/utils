@@ -13,5 +13,5 @@
     "skipLibCheck": true
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["vitest.config.ts"]
+  "exclude": ["vitest.config.ts", "src/**/*.test.*"]
 }
