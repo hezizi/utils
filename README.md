@@ -6,7 +6,8 @@
 
 ```
 npm install @yuci/utils
-
+```
+```
 pnpm add @yuci/utils
 ```
 
