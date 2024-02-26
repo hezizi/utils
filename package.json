@@ -19,6 +19,7 @@
     "url": "https://github.com/hezizi/utils.git/issues"
   },
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "type": "module",
