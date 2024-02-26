@@ -1,5 +1,28 @@
 #📋 CHANGELOG
 
+## [0.2.1](https://github.com/hezizi/utils/compare/0.2.0...0.2.1) (2024-02-26)
+
+
+### ✨ Features
+
+* :sparkles: export random ([c1e397e](https://github.com/hezizi/utils/commit/c1e397e50d159ea5663e8deaee9c0bda7a541403))
+* **random:** :sparkles: add random functions ([a13f35f](https://github.com/hezizi/utils/commit/a13f35f1da9504c1026e0c2fbd75e9beb2c979e8))
+
+
+### 📦 Chores
+
+* :hammer: set publishConfig access to public ([970c3e4](https://github.com/hezizi/utils/commit/970c3e463e5af23f15f1c42f1574efd8331a8941))
+
+
+### ♻ Code Refactoring
+
+* :recycle: move utils example to a alone repo ([5cb8aa9](https://github.com/hezizi/utils/commit/5cb8aa98884be63864e40f3e04d69d97a7dd57fb))
+
+
+### ✅ Tests
+
+* :white_check_mark: add random test functions ([cc7ee60](https://github.com/hezizi/utils/commit/cc7ee6057f7d48ccdeba98326a6a6eca83258476))
+
 ## 0.2.0 (2023-09-13)
 
 
